@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "image-app",
+    "slug": "react-native-image-crop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "This Snack provides the complete Expo tutorial example. ",
+    "extra": {
+      "eas": {
+        "projectId": "e217bb64-e79f-4f2f-bfde-2f832fd031d7"
+      }
+    },
+    "owner": "perohub"
+  }
+}
