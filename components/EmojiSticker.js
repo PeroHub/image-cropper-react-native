@@ -45,16 +45,20 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
   });
 
   return (
-    <GestureDetector gesture={drag}>
-      <Animated.View style={[containerStyle, { top: -350 }]}>
-        <GestureDetector gesture={doubleTap}>
-          <Animated.Image
-            source={stickerSource}
-            resizeMode="contain"
-            style={[imageStyle, { width: imageSize, height: imageSize }]}
-          />
-        </GestureDetector>
-      </Animated.View>
-    </GestureDetector>
+    <>
+      {stickerSource.map((item, idx) => (
+          <Animated.View key={idx} style={[containerStyle, { top: -350 }]}>
+            <GestureDetector key={idx} gesture={drag}>
+                <GestureDetector  gesture={doubleTap}>
+                  <Animated.Image
+                    source={item}
+                    resizeMode="contain"
+                    style={[imageStyle, { width: imageSize, height: imageSize }]}
+                  />
+                </GestureDetector>
+            </GestureDetector>
+          </Animated.View>
+      ))}
+    </>
   );
 }

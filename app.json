@@ -3,7 +3,7 @@
     "name": "image-app",
     "slug": "react-native-image-crop",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -32,6 +32,12 @@
         "projectId": "e217bb64-e79f-4f2f-bfde-2f832fd031d7"
       }
     },
-    "owner": "perohub"
+    "owner": "perohub",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e217bb64-e79f-4f2f-bfde-2f832fd031d7"
+    }
   }
 }
